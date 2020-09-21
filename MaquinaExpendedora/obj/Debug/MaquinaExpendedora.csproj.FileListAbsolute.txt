@@ -5,3 +5,10 @@ C:\Users\elabendz\Documents\MaquinaExpendedora\MaquinaExpendedora\obj\Debug\Maqu
 C:\Users\elabendz\Documents\MaquinaExpendedora\MaquinaExpendedora\obj\Debug\MaquinaExpendedora.csproj.CoreCompileInputs.cache
 C:\Users\elabendz\Documents\MaquinaExpendedora\MaquinaExpendedora\obj\Debug\MaquinaExpendedora.exe
 C:\Users\elabendz\Documents\MaquinaExpendedora\MaquinaExpendedora\obj\Debug\MaquinaExpendedora.pdb
+C:\Users\elabendz\Documents\MaquinaExpendedora\CAI-maquina-expendedora\MaquinaExpendedora\obj\Debug\MaquinaExpendedora.csprojAssemblyReference.cache
+C:\Users\elabendz\Documents\MaquinaExpendedora\CAI-maquina-expendedora\MaquinaExpendedora\obj\Debug\MaquinaExpendedora.csproj.CoreCompileInputs.cache
+C:\Users\elabendz\Documents\MaquinaExpendedora\CAI-maquina-expendedora\MaquinaExpendedora\obj\Debug\MaquinaExpendedora.exe
+C:\Users\elabendz\Documents\MaquinaExpendedora\CAI-maquina-expendedora\MaquinaExpendedora\obj\Debug\MaquinaExpendedora.pdb
+C:\Users\elabendz\Documents\MaquinaExpendedora\CAI-maquina-expendedora\MaquinaExpendedora\bin\Debug\MaquinaExpendedora.exe.config
+C:\Users\elabendz\Documents\MaquinaExpendedora\CAI-maquina-expendedora\MaquinaExpendedora\bin\Debug\MaquinaExpendedora.exe
+C:\Users\elabendz\Documents\MaquinaExpendedora\CAI-maquina-expendedora\MaquinaExpendedora\bin\Debug\MaquinaExpendedora.pdb

@@ -15,14 +15,7 @@ namespace MaquinaExpendedora
         bool _encendida;
         public Expendedora()
         {
-            List<Lata> lasLatas = new List<Lata>();
-            lasLatas.Add(new Lata("CO1"));
-            lasLatas.Add(new Lata("CO2"));
-            lasLatas.Add(new Lata("SP1"));
-            lasLatas.Add(new Lata("SP2"));
-            lasLatas.Add(new Lata("FA1"));
-            lasLatas.Add(new Lata("FA2"));
-            latas = lasLatas;
+            latas = new List<Lata>();
         }
 
         public List<Lata> latas
@@ -80,9 +73,9 @@ namespace MaquinaExpendedora
                 _encendida = value;
             }
         }
-        public void agregarLata(Lata codigo)
+        public void agregarLata(Lata lata)
         {
-
+            latas.Add(lata);
         }
         public Lata extraerLata(string a,double b)
         {
@@ -120,6 +113,5 @@ namespace MaquinaExpendedora
             }
             return existeCodigo;
         }
-
     }
 }

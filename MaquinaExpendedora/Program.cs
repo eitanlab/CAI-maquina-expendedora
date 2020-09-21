@@ -19,16 +19,19 @@ namespace MaquinaExpendedora
         }
         static bool menuUsuario(Expendedora expendedora)
         {
-            Console.WriteLine("MENU");
-            Console.WriteLine("1. Encender máquina");
             if (expendedora.encendida)
             {
+                Console.WriteLine("MENU MAQUINA ENCENDIDA");
                 Console.WriteLine("2. Ver listado de latas disponibles");
                 Console.WriteLine("3. Insertar lata");
                 Console.WriteLine("4. Comprar lata");
                 Console.WriteLine("5. Ver balance de máquina");
                 Console.WriteLine("6. Ver stock y detalle por lata");
                 Console.WriteLine("Ingrese el número de operación:");
+            } else
+            {
+                Console.WriteLine("MENU MAQUINA APAGADA");
+                Console.WriteLine("1. Encender máquina");
             }
 
             switch (Console.ReadLine())
@@ -37,40 +40,58 @@ namespace MaquinaExpendedora
                     expendedora.encenderMaquina();
                     return true;
                 case "2":
-                    Console.WriteLine(expendedora.mostrarLatasDisponibles());
+                    Console.WriteLine(latasPosibles());
                     return true;
                 case "3":
-                    Console.WriteLine(expendedora.mostrarLatasDisponibles());
-                    Console.WriteLine("Ingrese código de lata a insertar");
-                    string codigoLataAIngresar = Console.ReadLine();
-                    if (expendedora.existeCodigoLata(codigoLataAIngresar))
-                    {
-                        Lata lataAIngresar = new Lata();
-                        lataAIngresar.codigo = codigoLataAIngresar;
-                        Console.Clear();
-                        Console.WriteLine("Ingrese el precio de venta");
-                        string precioLataAIngresar = Console.ReadLine();
-                        if (Convert.ToDouble(precioLataAIngresar) > 0) {
-                            lataAIngresar.precio = Convert.ToDouble(precioLataAIngresar);
-                            Console.Clear();
-                            Console.WriteLine("Ingrese el volumen de lata");
-                            string volumenLataAIngresar = Console.ReadLine();
-                            if (Convert.ToDouble(volumenLataAIngresar) > 0) {
-                                lataAIngresar.volumen = Convert.ToDouble(volumenLataAIngresar);
-                            }
-                        }
-                        return true;
-                    }
+                    ingresarLata(expendedora);
                     return true;
                 default:
                     return true;
             }
         }
-        static void ingresarLata(Expendedora expendedora) { 
-            
+        static void ingresarLata(Expendedora expendedora) {
+            Console.Clear();
+            Console.WriteLine("Códigos de latas disponibles");
+            Console.WriteLine(latasPosibles());
+            Console.WriteLine("Ingrese código de lata a insertar");
+            string codigoLataAIngresar = Console.ReadLine();
+            try
+            {
+                Lata lataAIngresar = new Lata(codigoLataAIngresar);
+                Console.WriteLine("Ingrese el precio de venta");
+                    string precioLataAIngresar = Console.ReadLine();
+                    if (Convert.ToDouble(precioLataAIngresar) > 0)
+                    {
+                        lataAIngresar.precio = Convert.ToDouble(precioLataAIngresar);
+                        Console.WriteLine("Ingrese el volumen de lata");
+                        string volumenLataAIngresar = Console.ReadLine();
+                        if (Convert.ToDouble(volumenLataAIngresar) > 0)
+                        {
+                            lataAIngresar.volumen = Convert.ToDouble(volumenLataAIngresar);
+                            expendedora.agregarLata(lataAIngresar);
+                        }
+                    }
+            }
+            catch
+            {
+
+            }
         }
         static void extraerLata(Expendedora expendedora) { }
         static void obtenerBalance(Expendedora expendedora) { }
         static void mostrarStock(Expendedora expendedora) { }
+
+        static string latasPosibles ()
+        {
+            string strLatasPosibles =
+                "@CO1 - Coca Cola Regular" +
+                "@CO2 - Coca Cola Zero" +
+                "@SP1 - Sprite Regular" +
+                "@SP2 - Sprite Zero" +
+                "@FA1 - Fanta Regular" +
+                "@FA2 - Fanta Zero";
+            strLatasPosibles = strLatasPosibles.Replace("@", System.Environment.NewLine);
+            return strLatasPosibles;
+        }
     }
 }
