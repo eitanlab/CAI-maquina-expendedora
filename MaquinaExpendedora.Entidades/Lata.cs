@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MaquinaExpendedora
+namespace MaquinaExpendedora.Entidades
 {
     public class Lata
     {
@@ -14,7 +14,7 @@ namespace MaquinaExpendedora
         double _precio;
         double _volumen;
 
-        public Lata () { }
+        public Lata() { }
         public Lata(string codigoLata)
         {
             codigo = codigoLata;
@@ -45,6 +45,7 @@ namespace MaquinaExpendedora
                     sabor = "Zero";
                     return;
                 default:
+                    //throw new System.ArgumentException("El código ingresado es inválido", "original");
                     return;
             }
         }

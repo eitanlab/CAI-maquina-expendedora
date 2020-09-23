@@ -12,3 +12,6 @@ C:\Users\elabendz\Documents\MaquinaExpendedora\CAI-maquina-expendedora\MaquinaEx
 C:\Users\elabendz\Documents\MaquinaExpendedora\CAI-maquina-expendedora\MaquinaExpendedora\bin\Debug\MaquinaExpendedora.exe.config
 C:\Users\elabendz\Documents\MaquinaExpendedora\CAI-maquina-expendedora\MaquinaExpendedora\bin\Debug\MaquinaExpendedora.exe
 C:\Users\elabendz\Documents\MaquinaExpendedora\CAI-maquina-expendedora\MaquinaExpendedora\bin\Debug\MaquinaExpendedora.pdb
+C:\Users\elabendz\Documents\MaquinaExpendedora\CAI-maquina-expendedora\MaquinaExpendedora\bin\Debug\Entidades.dll
+C:\Users\elabendz\Documents\MaquinaExpendedora\CAI-maquina-expendedora\MaquinaExpendedora\bin\Debug\Entidades.pdb
+C:\Users\elabendz\Documents\MaquinaExpendedora\CAI-maquina-expendedora\MaquinaExpendedora\obj\Debug\MaquinaExpendedora.csproj.CopyComplete

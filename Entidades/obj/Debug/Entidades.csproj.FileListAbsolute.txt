@@ -1,0 +1,6 @@
+C:\Users\elabendz\Documents\MaquinaExpendedora\CAI-maquina-expendedora\Entidades\bin\Debug\Entidades.dll
+C:\Users\elabendz\Documents\MaquinaExpendedora\CAI-maquina-expendedora\Entidades\bin\Debug\Entidades.pdb
+C:\Users\elabendz\Documents\MaquinaExpendedora\CAI-maquina-expendedora\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\elabendz\Documents\MaquinaExpendedora\CAI-maquina-expendedora\Entidades\obj\Debug\Entidades.dll
+C:\Users\elabendz\Documents\MaquinaExpendedora\CAI-maquina-expendedora\Entidades\obj\Debug\Entidades.pdb
+C:\Users\elabendz\Documents\MaquinaExpendedora\CAI-maquina-expendedora\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache

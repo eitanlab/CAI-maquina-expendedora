@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MaquinaExpendedora
+namespace MaquinaExpendedora.Entidades
 {
     public class Expendedora
     {
@@ -77,11 +77,12 @@ namespace MaquinaExpendedora
         {
             latas.Add(lata);
         }
-        public Lata extraerLata(string a,double b)
+        public Lata extraerLata(string a, double b)
         {
             return null;
         }
-        public string getBalance() {
+        public string getBalance()
+        {
             return "";
         }
         public void encenderMaquina()
@@ -107,7 +108,7 @@ namespace MaquinaExpendedora
         public bool existeCodigoLata(string codigo)
         {
             bool existeCodigo = false;
-            foreach(Lata lata in latas)
+            foreach (Lata lata in latas)
             {
                 if (lata.codigo == codigo) existeCodigo = true;
             }
