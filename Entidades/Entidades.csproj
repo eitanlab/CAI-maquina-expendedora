@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CapacidadInsuficienteException.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="DineroInsuficienteException.cs" />
     <Compile Include="Expendedora.cs" />
     <Compile Include="Lata.cs" />
     <Compile Include="CodigoInvalidoException.cs" />

@@ -106,7 +106,7 @@ namespace Entidades
         public double getPrecioPorLitro()
         {
             double precioPorLitro = precio * 1000 / volumen;
-            return precioPorLitro;
+            return Math.Round(precioPorLitro, 2);
         }
         public string toString()
         {

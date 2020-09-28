@@ -13,9 +13,11 @@ namespace Entidades
         int _capacidad;
         double _dinero;
         bool _encendida;
-        public Expendedora()
+        public Expendedora(int capacidadIngresada)
         {
             latas = new List<Lata>();
+            capacidad = capacidadIngresada;
+            dinero = 0;
         }
 
         public List<Lata> latas
@@ -75,15 +77,24 @@ namespace Entidades
         }
         public void agregarLata(Lata lata)
         {
-            latas.Add(lata);
+            if (latas.Count < capacidad)
+            {
+                latas.Add(lata);
+            } else
+            {
+                throw new CapacidadInsuficienteException();
+            }
         }
-        public Lata extraerLata(string a, double b)
+        public Lata extraerLata(Lata lataAExtraer)
         {
-            return null;
+            latas.Remove(lataAExtraer);
+            dinero += lataAExtraer.precio;
+            return lataAExtraer;
         }
         public string getBalance()
         {
-            return "";
+            string balance = "La expendedora tiene $" + dinero + " y quedan " + latas.Count() + " latas en stock";
+            return balance;
         }
         public void encenderMaquina()
         {
